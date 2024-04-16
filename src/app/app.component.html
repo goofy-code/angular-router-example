@@ -1,0 +1,10 @@
+Toggle loginState
+<button (click)="toggleLogin()">{{ sApp.loginState.getValue() ? 'Logged IN' : 'Logged OUT' }}</button>
+
+<ul>
+  <li><a routerLink="login" [routerLinkActive]="'active'">Login (only logged OUT)</a></li>
+  <li><a routerLink="dashboard" [routerLinkActive]="'active'">Dashboard (only logged IN)</a></li>
+  <li><a routerLink="settings" [routerLinkActive]="'active'">Settings (only logged IN)</a></li>
+</ul>
+<div class="message" *ngIf="sApp.message">{{ sApp.message }}</div>
+<router-outlet/>

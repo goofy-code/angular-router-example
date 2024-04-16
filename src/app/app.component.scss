@@ -1,0 +1,19 @@
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+a.active {
+  color: dodgerblue;
+  font-weight: bold;
+}
+
+.message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: red;
+}
